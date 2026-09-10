@@ -11,12 +11,12 @@
   /* Committed to one visual world: the content is game art, and it belongs on a ground
      that lets it glow. Every colour is painted explicitly, nothing inherited. */
   :root {
-    --ground: hsl(148 24% 6%);
-    --raised: hsl(148 20% 10%);
-    --ink:    hsl(148 12% 95%);
-    --muted:  hsl(148 10% 58%);
-    --line:   hsl(148 16% 17%);
-    --accent: hsl(148 72% 70%);
+    --ground: hsl(78 0% 6%);
+    --raised: hsl(78 0% 10%);
+    --ink:    hsl(78 0% 95%);
+    --muted:  hsl(78 0% 58%);
+    --line:   hsl(78 0% 17%);
+    --accent: hsl(78 60% 62%);
     --sans: Archivo, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   }
 
@@ -46,6 +46,7 @@
     line-height: 1;
     letter-spacing: -.018em;
     text-wrap: balance;
+    color: var(--ink);
   }
   .lede { margin: 0; color: var(--accent); font-size: 1.0625rem; }
   .about { margin: .4rem 0 0; max-width: 58ch; color: var(--muted); font-size: 1rem; }
@@ -84,7 +85,7 @@
   }
   .btn svg { width: 15px; height: 15px; flex: 0 0 15px; }
   .btn-play { background: var(--accent); color: var(--ground); }
-  .btn-play:hover { background: hsl(148 78% 78%); }
+  .btn-play:hover { background: hsl(78 60% 70%); }
   .btn-ghost { border-color: var(--line); color: var(--muted); }
   .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
   .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
